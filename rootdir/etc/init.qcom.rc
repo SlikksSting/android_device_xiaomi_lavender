@@ -50,6 +50,7 @@ on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
 on init
+    mount none /sbin/chargeonlymode /sbin/charger bind
 
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
