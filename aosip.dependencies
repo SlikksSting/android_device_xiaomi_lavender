@@ -10,5 +10,12 @@
  {
     "repository": "android_packages_resources_devicesettings",
     "target_path": "packages/resources/devicesettings"
+ },
+
+ {
+   "repository": "AryToNeX/android_vendor_xiaomi_Dirac",
+   "target_path": "vendor/xiaomi/Dirac",
+   "branch": "pie",
+   "remote": "github"
  }
 ]
