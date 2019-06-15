@@ -61,7 +61,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lavender
 TARGET_KERNEL_CONFIG := lavender-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-
+TARGET_KERNEL_CLANG_VERSION := 9.0.3
 # dtbo
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
@@ -283,6 +283,6 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 # inherit from the proprietary version
 -include vendor/xiaomi/lavender/BoardConfigVendor.mk
