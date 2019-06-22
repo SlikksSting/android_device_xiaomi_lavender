@@ -48,7 +48,7 @@ def OTA_InstallEnd(info):
   AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
 
-def AddBasebandAssertion(info, input_zip):
+def AddTrustZoneAssertion(info, input_zip):
   android_info = input_zip.read("OTA/android-info.txt")
   m = re.search(r'require\s+version-baseband\s*=\s*(.+)', android_info)
   if m:
