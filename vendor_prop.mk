@@ -75,6 +75,34 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.voice.volume.boost=manual \
     sys.autosuspend.timeout=500000
 
-# Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=subdragonzj
+   vendor.audio_hal.period_size=192 \
+   vendor.audio_hal.period_multiplier=3 \
+   vendor.audio.adm.buffering.ms=2
+
+# Debug Options
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.ims_volte_enable=1 \
+   persist.dbg.volte_avail_ovr=1 \
+   persist.dbg.vt_avail_ovr=1 \
+   persist.dbg.wfc_avail_ovr=1
+
+# Radio Options
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.vendor.radio.rat_on=combine \
+   persist.vendor.radio.data_ltd_sys_ind=1 \
+   persist.vendor.radio.data_con_rprt=1 \
+   persist.radio.calls.on.ims=1
+
+# USB debugging
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.usb.config=mtp,adb \
+	ro.adb.secure=0 \
+	ro.secure=0 \
+  ro.debuggable=1
+
+# ART
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.dex2oat-filter=speed \
+dalvik.vm.image-dex2oat-filter=speed
+>>>>>>> 19b3a0ad... lavender: Compile HWUI for better perfirmance
