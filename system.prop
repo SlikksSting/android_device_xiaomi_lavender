@@ -263,5 +263,6 @@ persist.radio.VT_HYBRID_ENABLE=1
 # dpi
 ro.sf.lcd_density=440
 
-persist.dbg.wfc_avail_ovr=1
+# Maintainer
+ro.mk.maintainer=subdragonzj
 
