@@ -6,6 +6,8 @@ disable.cpp.power.collapse          u:object_r:camera_prop:s0
 persist.camera.                     u:object_r:camera_prop:s0
 persist.vendor.camera.              u:object_r:vendor_camera_prop:s0
 persist.camera.HAL3.enable         u:object_r:camera_prop:s0	
+persist.camera.HAL3.enabled         u:object_r:camera_prop:s0
+
 # Dirac
 persist.audio.dirac.                u:object_r:dirac_prop:s0
 
